@@ -1,0 +1,22 @@
+graph TD
+    A["<b>Idée / Objectif</b><br/>(Ex: 'Je veux une analyse de marché')"]
+    
+    subgraph "ÉTAPE 1 : AUDIT DU PROMPT (La Revue de Code)"
+        B["<b>Prompt v1.0</b><br/>(Le 'code source' de la requête)"]
+        C{"<b>Audit du Prompt</b><br/>(Ce qu'on s'apprête à faire)"}
+        D["<b>Objectif de l'Audit :</b><br/>- Maximiser la clarté et la précision.<br/>- Réduire le risque d'hallucination.<br/>- Garantir que le prompt est aligné<br/>  avec l'objectif stratégique."]
+        E["<b>Livrable :</b><br/>Un <b>Prompt v2.0</b> optimisé et validé."]
+    end
+
+    subgraph "ÉTAPE 2 : EXÉCUTION"
+        F["Lancement du Prompt v2.0<br/>sur un LLM."]
+    end
+
+    subgraph "ÉTAPE 3 : AUDIT DU RÉSULTAT (Le Test Produit)"
+        G["<b>Résultat de l'IA</b><br/>(L'analyse de marché générée)"]
+        H{"<b>Audit du Résultat</b><br/>(Ton rôle d'Architecte)"}
+        I["<b>Objectif de l'Audit :</b><br/>- Vérifier que le résultat est factuellement correct.<br/>- S'assurer qu'il est actionnable.<br/>- Confirmer qu'il répond bien à la question initiale."]
+        J["<b>Livrable :</b><br/>Une <b>Décision Stratégique</b> validée."]
+    end
+
+    A --> B --> C --> E --> F --> G --> H --> J```
