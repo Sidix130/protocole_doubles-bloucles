@@ -1,0 +1,73 @@
+# ===================================================================
+# Fichier .gitignore pour le projet Koru
+# ===================================================================
+
+# 1. DÉPENDANCES ET PAQUETS
+# -------------------------------------------------------------------
+# Le plus important. Ne jamais versionner les dépendances.
+# Elles peuvent être réinstallées avec `npm install`.
+/node_modules
+
+# Fichiers de log générés par npm.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# 2. FICHIERS DE LOG ET DE BUILD
+# -------------------------------------------------------------------
+# Dossiers de build (au cas où vous en ajouteriez un plus tard).
+/dist
+/build
+/out
+
+# Fichiers de log génériques.
+*.log
+logs/
+
+
+# 3. FICHIERS DE L'ENVIRONNEMENT DE DÉVELOPPEMENT
+# -------------------------------------------------------------------
+# Fichiers de variables d'environnement (contiennent des secrets).
+.env
+.env.local
+.env.*.local
+
+# Fichiers de configuration de l'éditeur (VSCode, VSCodium, etc.).
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Fichiers de cache et de configuration d'autres outils.
+.idea/
+.project
+.classpath
+
+
+# 4. FICHIERS SPÉCIFIQUES À L'OS
+# -------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+
+# 5. FICHIERS PERSONNELS ET TEMPORAIRES (PROPRES AU PROJET)
+# -------------------------------------------------------------------
+# Ignore les fichiers de brouillon et de test que vous avez créés.
+brouillon-readme.md
+zz.md
+docs/assets/
+docs/svg/
+
+# Ignore les fichiers HTML générés localement pour la visualisation.
+arboressence.html
+
+# Ignore les fichiers Markdown en double ou mal nommés (gardez une seule version).
+READ_ME.MD

@@ -1,0 +1,33 @@
+graph TD
+    %% Définition des styles (Thème Sombre + Texte Blanc)
+    classDef supervisor fill:#1c2b3a,stroke:#58a6ff,stroke-width:2px,color:#FFFFFF;
+    classDef operational fill:#342c1b,stroke:#e3b341,stroke-width:2px,color:#FFFFFF;
+    classDef execution fill:#2d333b,stroke:#8b949e,stroke-width:2px,color:#FFFFFF;
+
+    %% --- NIVEAU 1 : SUPERVISION ---
+    subgraph "NIVEAU 1 : Direction Stratégique"
+        A["<b>Architecte / Superviseur</b><br/><i>Rôle : Le 'Pourquoi du Pourquoi'</i>"]:::supervisor
+    end
+
+    %% --- NIVEAU 2 : OPÉRATIONNEL ---
+    subgraph "NIVEAU 2 : Management Exécutif"
+        B["<b>Agent Visionnaire</b><br/><i>Rôle : Le 'Pourquoi'</i>"]:::operational
+        C["<b>Agent Manager</b><br/><i>Rôle : Le 'Comment'</i>"]:::operational
+    end
+    
+    %% --- NIVEAU 3 : EXÉCUTION ---
+    subgraph "NIVEAU 3 : Production"
+        D["<b>Agent Exécutant</b><br/><i>Rôle : Le 'Quoi'</i>"]:::execution
+    end
+    
+    %% --- FLUX DE TRAVAIL ET INTERACTIONS ---
+
+    %% Commandes et flux descendants (lignes solides)
+    A -- "Définit la Mission" --> B & C
+    B -- "Dialogue Adversarial" --> C
+    C -- "Ordres Clairs" --> D
+    
+    %% Rapports et livrables remontants (lignes pointillées)
+    D -. "Produit des Livrables" .-> C
+    C -. "Rapport de Faisabilité" .-> B
+    B & C -. "Rapport d'Avancement" .-> A

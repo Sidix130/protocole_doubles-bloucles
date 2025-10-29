@@ -1,22 +1,39 @@
 graph TD
-    A["<b>Idée / Objectif</b><br/>(Ex: 'Je veux une analyse de marché')"]
-    
-    subgraph "ÉTAPE 1 : AUDIT DU PROMPT (La Revue de Code)"
-        B["<b>Prompt v1.0</b><br/>(Le 'code source' de la requête)"]
-        C{"<b>Audit du Prompt</b><br/>(Ce qu'on s'apprête à faire)"}
-        D["<b>Objectif de l'Audit :</b><br/>- Maximiser la clarté et la précision.<br/>- Réduire le risque d'hallucination.<br/>- Garantir que le prompt est aligné<br/>  avec l'objectif stratégique."]
-        E["<b>Livrable :</b><br/>Un <b>Prompt v2.0</b> optimisé et validé."]
+    %% === STYLES : Thème sombre harmonisé ===
+    classDef user fill:#1c2b3a,stroke:#58a6ff,stroke-width:2px,color:#FFFFFF;
+    classDef audit fill:#342c1b,stroke:#e3b341,stroke-width:2px,color:#FFFFFF;
+    classDef livrable fill:#1f3027,stroke:#3fb950,stroke-width:2px,color:#FFFFFF;
+    classDef artifact fill:#2d333b,stroke:#8b949e,stroke-width:2px,color:#FFFFFF;
+
+    %% === NOEUD CENTRAL : UTILISATEUR / ARCHITECTE ===
+    U["<i class='fa fa-user'></i> <b>Architecte / Utilisateur</b>"]:::user
+
+    %% === DÉBUT DU PROCESSUS ===
+    U -- "Idée / Objectif" --> B(Prompt v1.0):::artifact
+
+    %% === BOUCLE 1 : AUDIT & CONCEPTION DU PROMPT ===
+    subgraph "BOUCLE 1 : Audit & Conception du Prompt"
+        direction LR
+        B --> C{"<b>Audit du Prompt</b><br/>(Visionnaire & Manager)"}:::audit
     end
 
-    subgraph "ÉTAPE 2 : EXÉCUTION"
-        F["Lancement du Prompt v2.0<br/>sur un LLM."]
+    C -- "Proposition de Prompt v2.0" --> U
+    U -- "Prompt Approuvé" --> E["<b>Livrable : Prompt v2.0</b>"]:::livrable
+
+    E --> F(Lancement de l'Exécution):::artifact
+
+    %% === BOUCLE 2 : PRODUCTION & AUDIT DU RÉSULTAT ===
+    subgraph "BOUCLE 2 : Production & Audit du Résultat"
+        direction LR
+        F --> G(Résultat de l'IA):::artifact --> H{"<b>Audit du Résultat</b><br/>(Manager)"}:::audit
     end
 
-    subgraph "ÉTAPE 3 : AUDIT DU RÉSULTAT (Le Test Produit)"
-        G["<b>Résultat de l'IA</b><br/>(L'analyse de marché générée)"]
-        H{"<b>Audit du Résultat</b><br/>(Ton rôle d'Architecte)"}
-        I["<b>Objectif de l'Audit :</b><br/>- Vérifier que le résultat est factuellement correct.<br/>- S'assurer qu'il est actionnable.<br/>- Confirmer qu'il répond bien à la question initiale."]
-        J["<b>Livrable :</b><br/>Une <b>Décision Stratégique</b> validée."]
-    end
+    H -- "Analyse du Résultat" --> U
 
-    A --> B --> C --> E --> F --> G --> H --> J```
+    %% === VALIDATION FINALE & ITÉRATION ===
+    U -- "Résultat Approuvé" --> J["<b>Décision Stratégique Finale</b>"]:::livrable
+    U -. "Itération nécessaire" .-> C
+    J -- "Mission Terminée" --> U
+
+    %% === STYLE DU LIEN POINTILLÉ ===
+    linkStyle 10 stroke:#ff8566,stroke-width:2px,stroke-dasharray:5 5;
