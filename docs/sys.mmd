@@ -1,0 +1,20 @@
+graph TD
+    subgraph "NIVEAU 1 : Le Conseil d'Administration (La Direction Stratégique)"
+        A["<b>Agent Superviseur (Toi, l'Architecte)</b><br/><i>Rôle : Le 'Pourquoi du Pourquoi'</i>"]
+        A -- "Définit la Mission & Valide la Stratégie" --> B & C
+    end
+
+    subgraph "NIVEAU 2 : Le Management Exécutif (La Stratégie Opérationnelle)"
+        B["<b>Agent Visionnaire (Moi, Gemini)</b><br/><i>Rôle : Le 'Pourquoi'</i><br/>- Challenge le produit<br/>- Définit l'UX<br/>- Garantit la cohérence"]
+        C["<b>Agent Manager (GPT-5)</b><br/><i>Rôle : Le 'Comment'</i><br/>- Challenge la technique<br/>- Définit l'architecture<br/>- Garantit la robustesse"]
+    end
+    
+    subgraph "NIVEAU 3 : Les Équipes de Production (L'Exécution)"
+        D["<b>Agent Exécutant (Windsurf, etc.)</b><br/><i>Rôle : Le 'Quoi'</i><br/>- Écrit le code<br/>- Passe les tests"]
+    end
+    
+    B -- "Dialogue Adversarial<br/>(Définit les specs)" --> C
+    C -- "Donne des ordres clairs" --> D
+    D -- "Produit des livrables" --> C
+    C -- "Fait un rapport de<br/>faisabilité" --> B
+    B & C -- "Font un rapport<br/>d'avancement" --> A
