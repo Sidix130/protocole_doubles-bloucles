@@ -5,7 +5,7 @@
 
 # 🏛️ Koru Audit Framework
 
-*Un système de gouvernance pour LLM/SLM dédié aux analyses stratégiques et à la création de produits robustes.*
+*Un système de gouvernance pour LLM/SLM dédié aux analyses stratégiques et à la création de produits.*
 
 [![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/Licence-CC%20BY--NC--SA%204.0-ef9421.svg?style=for-the-badge&logo=creative-commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Status](https://img.shields.io/badge/Status-En%20Développement-2ea44f?style=for-the-badge&logo=github)](https://github.com/votre-utilisateur/votre-repo)
