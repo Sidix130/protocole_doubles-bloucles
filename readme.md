@@ -10,7 +10,7 @@
 [![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/Licence-CC%20BY--NC--SA%204.0-ef9421.svg?style=for-the-badge&logo=creative-commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Status](https://img.shields.io/badge/Status-En%20Développement-2ea44f?style=for-the-badge&logo=github)](https://github.com/votre-utilisateur/votre-repo)
 [![Version](https://img.shields.io/badge/Version-0.1.0-0052cc?style=for-the-badge&logo=git)](https://github.com/votre-utilisateur/votre-repo/releases)
-*<p>Coquery robin</p>*
+*<p>Sidix130 @Coquery Robin</p>*
 
 </div>
 
@@ -47,10 +47,10 @@ Le système Koru repose sur la synergie de deux concepts fondamentaux : le **pro
   </tr>
   <tr>
     <td valign="top">
-      <img src="docs/svg/protocol-double-loop-audit.svg" alt="Schéma du Processus en Boucle">
+      <img src="docs/assets/protocol-double-loop-audit.svg" alt="Schéma du Processus en Boucle">
     </td>
     <td valign="top">
-      <img src="docs/svg/architecture.svg" alt="Schéma de l'Architecture des Agents">
+      <img src="docs/assets/architecture.svg" alt="Schéma de l'Architecture des Agents">
     </td>
   </tr>
 </table>
@@ -75,7 +75,9 @@ Une fois la conjoncture établie, formulez votre besoin précis dans le message 
 
 > **Exemple :** *"Je veux une analyse de marché sur les outils de productivité basés sur l'IA pour les freelances en Europe."*
 
-![alt text](image.png)
+### 📂 Structure du Dépôt
+![!\[alt text\](image.png)
+](docs/assets/arboressence.html-1366x768.png)
 
 ## 🧠 Concepts Fondamentaux
 
@@ -93,5 +95,3 @@ Ce projet est distribué sous la licence **Creative Commons Attribution-NonComme
 Vous êtes libre de **partager** et **d'adapter** ce travail à des fins **non commerciales**, à condition de **créditer l'auteur** et de **partager vos créations sous la même licence**.
 
 Pour le texte légal complet, consultez le fichier `LICENSE` inclus dans ce dépôt.
-
-```

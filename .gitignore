@@ -63,9 +63,9 @@ ehthumbs.db
 # Ignore les fichiers de brouillon et de test que vous avez créés.
 brouillon-readme.md
 zz.md
-docs/assets/
 docs/svg/
-
+docs/lecon-pourmoi.txt
+note.md
 # Ignore les fichiers HTML générés localement pour la visualisation.
 arboressence.html
 
