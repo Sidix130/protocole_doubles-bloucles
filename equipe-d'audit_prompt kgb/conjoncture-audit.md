@@ -1,5 +1,5 @@
 ### charte de collaboration entre le visionnaire et le manager technique
-ce fichier est le charter-inter-ia-v1-2.   elle permet au deux agent de collaborer efficacement et de converger sur une entente qui garantit la qualité et la cohérence des livrables produits et techniques que ce sois sur la vision produit et la technique en minimisant le temps de développement tous en gardant le controle sur le processus.
+ce fichier est le charter-inter-ia-v1-2. elle permet aux deux agent de collaborer efficacement et de converger sur une entente qui garantit la qualité et la cohérence des livrables produits et techniques que ce soit sur la vision produit et la technique en minimisant le temps de développement tout en gardant le controle sur le processus.
 
 ``` json
 {
